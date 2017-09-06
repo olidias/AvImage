@@ -1,5 +1,3 @@
 language: csharp
 solution: AvImage.sln
-install: 
-	- nuget restore AvImage.sln
-	
+install: - nuget restore AvImage.sln
