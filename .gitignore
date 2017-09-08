@@ -133,6 +133,9 @@ nCrunchTemp_*
 *.mm.*
 AutoTest.Net/
 
+# SonarQube
+.sonarqube/*
+
 # Web workbench (sass)
 .sass-cache/
 
