@@ -51,6 +51,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Caliburn.Micro.3.1.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
     </Reference>
@@ -73,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="ImageProcessing\ImageFileExtractor.cs" />
     <Compile Include="UI\ILayoutViewModel.cs" />
     <Compile Include="UI\ImagesContainer\ImagesContainerViewModel.cs" />
     <Compile Include="UI\ShellViewModel.cs" />
