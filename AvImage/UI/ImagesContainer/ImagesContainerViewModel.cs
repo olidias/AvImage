@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using AvImage.AverageCalculation;
 using AvImage.ImageProcessing;
 using Caliburn.Micro;
 
@@ -13,7 +10,8 @@ namespace AvImage.UI.ImagesContainer
         public ImagesContainerViewModel()
         {
             Console.WriteLine("ImagesContainerVM instantiated");
-            var ife = new ImageFileExtractor(@"E:\Media\Images\CH\Bachtel\IMG_8696.JPG");
+            var ife = new ImageFileExtractor(@"E:\Media\Images\CH\Davos\IMG_9498.JPG");
+            var calc = new SimpleAverageCalculator(ife.RgbValues);
         }
         
         public override string DisplayName { get; set; }

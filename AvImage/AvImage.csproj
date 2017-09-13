@@ -74,6 +74,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="AppBootstrapper.cs" />
+    <Compile Include="AverageCalculation\SimpleAverageCalculator.cs" />
     <Compile Include="ImageProcessing\ImageFileExtractor.cs" />
     <Compile Include="UI\ILayoutViewModel.cs" />
     <Compile Include="UI\ImagesContainer\ImagesContainerViewModel.cs" />
