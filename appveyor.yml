@@ -2,7 +2,7 @@ version: 1.0.{build}
 before_build:
 - cmd: nuget restore AvImage.sln
 build_script:
-- choco install "msbuild-sonarqube-runner" -y
-- MSBuild.SonarQube.Runner.exe begin /k:"AvImage" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=e5125d02b2b7b9da817e0c94e19efc795639edc6"
+#- choco install "msbuild-sonarqube-runner" -y
+#- MSBuild.SonarQube.Runner.exe begin /k:"AvImage" /d:"sonar.host.url=https://sonarqube.com" /d:"sonar.login=e5125d02b2b7b9da817e0c94e19efc795639edc6"
 - msbuild "AvImage.sln"
-- MSBuild.SonarQube.Runner.exe end /d:"sonar.login=e5125d02b2b7b9da817e0c94e19efc795639edc6"
+#- MSBuild.SonarQube.Runner.exe end /d:"sonar.login=e5125d02b2b7b9da817e0c94e19efc795639edc6"
